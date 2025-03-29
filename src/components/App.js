@@ -1,9 +1,17 @@
 import React from 'react'
 
+
+let persons = ["raj","ravi","rohan","roshan"]
 const App = () => {
   return (
     <div id="main">
-               {/* Do not remove the main div */}
+
+      <ol>
+        {persons.map((value)=>{
+return <li>{value}</li>
+        })}
+      </ol>
+
     </div>
   )
 }
